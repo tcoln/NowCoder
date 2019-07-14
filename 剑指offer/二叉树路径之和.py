@@ -15,8 +15,7 @@ class Solution:
                 newPath = list(path)
                 newPath.append(r.val)
                 # 判断是叶节点
-                if r.left == None and r.right == None:
-                    if pSum == expectNumber:
+                if r.left == None and r.right == None and pSum == expectNumber:
                         ans.append(newPath)
                 preOrder(r.left, newPath, pSum)
                 preOrder(r.right, newPath, pSum)
