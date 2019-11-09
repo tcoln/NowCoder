@@ -1,7 +1,7 @@
 import sys
 import bisect as bi
-N = 9 #input()
-stones = [1,2,3,4,9,5,6,7,8] #[int(i) for i in sys.stdin.readline().strip().split()]
+N = 5 #input()
+stones = [1,2,1,3,4] #[int(i) for i in sys.stdin.readline().strip().split()]
 maxL = [1 for i in range(N)]
 preLs = {stones[0]:1}
 for i in range(1, N):
